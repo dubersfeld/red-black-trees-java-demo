@@ -13,9 +13,9 @@ public class Tree<T extends Serializable, S extends NodeFactory<T>> implements S
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	Node<T> root;// root node
-	Node<T> nil;// sentinel node
-	S nodeFactory;// nodeFactory
+	protected Node<T> root;// root node
+	protected Node<T> nil;// sentinel node
+	protected S nodeFactory;// nodeFactory
 	  
     public Tree(Node<T> root, S nodeFactory) {
     	this.root = root;

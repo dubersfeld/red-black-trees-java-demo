@@ -41,8 +41,6 @@ function canvasApp() {
 		this.yConnD = this.yPos + this.mRadius;
 	}// NodeJSON
 	
-
-	console.log("canvasApp sator");
 	
 	// canvas context
 	if (!canvasSupport()) {
@@ -52,8 +50,6 @@ function canvasApp() {
 		var theCanvas = document.getElementById("canvas");
 		var context = theCanvas.getContext("2d");
 	}// if
-	
-	console.log("canvasApp arepo");
 	
 	var xMin = 0;
 	var yMin = 0;
@@ -67,7 +63,7 @@ function canvasApp() {
 	
 	
 	function treeJSONDisplay(treeArray) {// actual drawing
-		console.log("treeJSONDisplay begin " + treeArray.length);
+	
 		fillBackground();
 		setTextStyle();
 	   
@@ -75,8 +71,7 @@ function canvasApp() {
 		var index = 0;
 		for (var depth = 0; depth < 5; depth++) {
 			data = treeArray[depth]; // nodes on depth
-			console.log("treeJSONDisplay sator " + data);
-			console.log("treeJSONDisplay length " + data.length);
+	
 			for (var i = 0; i < data.length; i++) {// all nodes on depth
 				var nodeResult = data[i];
 			
@@ -112,7 +107,7 @@ function canvasApp() {
 	}
 	
 	function initGeometry() {
-		console.log("initGeometry begin");
+	
 		var xPos4 = [];
 		var xPos3 = [];
 		var xPos2 = [];
@@ -137,7 +132,6 @@ function canvasApp() {
 
 		xPos = [xPos0, xPos1, xPos2, xPos3, xPos4];
 
-		console.log("initGeometry completed");
 	}// initGeometry
 	
 	function drawNodeJSON(node) {// here node attribute are mKey, xPos, yPos, yConnU, yConnD 

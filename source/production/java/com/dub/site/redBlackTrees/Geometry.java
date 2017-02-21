@@ -10,8 +10,8 @@ public class Geometry implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	int depth;
-	int index;
+	private int depth;
+	private int index;
 	
 	public Geometry() {
 	}
