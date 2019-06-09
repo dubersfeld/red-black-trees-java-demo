@@ -11,7 +11,13 @@ In addition I created two Junit classes to separately test the Tree class and th
 
 I chose to make the Tree class generic.
 
-For the deployment on Tomcat the context root is red-black-trees.
+To launch the demo run the command `mvn spring-boot:run` in project directory.
+
+When the application has started open a browser and hit URL 'localhost:8080/red-black-trees'.
+
+A screen shot of a possible initial display is shown on this image:
+
+![alt text](images/initRBT.png "Red Black Tree Initialized")
 
 For a Java implementation of a basic Binary Search Tree please visit the repository:
 
